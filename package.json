@@ -8,7 +8,6 @@
   "main": "index.js",
   "dependencies": {
     "yargs": "^3.6.0",
-    "bluebird": "^2.9.24",
     "xml": "^1.0.0",
     "impress-mysql-storage": "icons8/impress-mysql-storage"
   },
