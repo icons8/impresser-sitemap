@@ -1,0 +1,1 @@
+# Impress MySQL sitemap generator

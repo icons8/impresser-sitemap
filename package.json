@@ -1,0 +1,19 @@
+{
+  "name": "impress-mysql-sitemap",
+  "description": "Impress MySQL sitemap generator",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/icons8/impress-mysql-sitemap"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "yargs": "^3.6.0",
+    "bluebird": "^2.9.24",
+    "xml": "^1.0.0",
+    "impress-mysql-storage": "icons8/impress-mysql-storage"
+  },
+  "license": "MIT",
+  "bin": {
+    "impress-mysql-sitemap": "./bin/impress-mysql-sitemap.js"
+  }
+}
