@@ -7,7 +7,7 @@ var
   yargs = require('yargs'),
 
   argv = yargs
-    .usage('Usage: $0 [options]')
+    .usage('Usage: $0 [config.json[, ...config.json]] [options]')
     .describe('server', 'Run sitemap generator server by default false')
     .describe('server-port', 'Sitemap generator server port by default 8697')
     .describe('storage-host', 'Database host by default localhost')
@@ -19,6 +19,11 @@ var
     .help('h')
     .alias('h', 'help')
     .epilog('impress-mysql-sitemap (https://github.com/icons8/impress-mysql-sitemap)')
-    .argv;
+    .argv,
 
-new Application(argv).run();
+  options;
+
+options = argv;
+options.config = argv._.concat(options.config);
+
+new Application(options).run();
