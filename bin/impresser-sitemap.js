@@ -18,7 +18,7 @@ var
     .describe('config', 'Path to config file, can be multiple')
     .help('h')
     .alias('h', 'help')
-    .epilog('impress-mysql-sitemap (https://github.com/icons8/impress-mysql-sitemap)')
+    .epilog('impresser-sitemap (https://github.com/icons8/impresser-sitemap)')
     .argv,
 
   options;
